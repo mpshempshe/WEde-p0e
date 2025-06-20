@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mosemathebohlo Business Group - Providing quality services to meet your needs">
+    <title>Mosemathebohlo Business Group</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="mosemathebohlo.css">
+    <script src="mosemathebohlo.js"></script> 
+</head>
+<body>
+    <nav class="nav">
+        <div class="bouncing-text">mosemathebohlo</div>
+        <ul class="navibar">
+              <li><a href="MOSEMATHEBOHLO.HTML" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="enqure.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="aboutus.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="services.html" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a></li> 
+            <li><button class="theme-toggle" onclick="switchColor()">
+                <i class="fas fa-moon"></i> Theme
+            </button></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Welcome to Mosemathebohlo Business Group</h1>
+        <p class="index">Where good memories are made</p>
+        <p class="index">We are a service providing company that offers a variety of services to meet the needs of our customers.</p>
+        <p class="index">What type of service would you like?</p>
+       
+            <div class="services-container">
+            <div class="service-card">
+                <h3>Consulting Services</h3>
+                <p>Our expert consultants provide tailored solutions to help your business grow and overcome challenges.</p>
+                <button onclick="openModal('consulting')">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3>Marketing Solutions</h3>
+                <p>Comprehensive marketing strategies to boost your brand visibility and customer engagement.</p>
+                <button onclick="openModal('marketing')">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3>IT Services</h3>
+                <p>Cutting-edge technology solutions to streamline your operations and enhance productivity.</p>
+                <button onclick="openModal('it')">Learn More</button>
+            </div>
+        </div>
+        
+        <div class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <p>"Mosemathebohlo Business Group transformed our operations with their innovative solutions. Highly recommended!"</p>
+                    <div class="author">- John D., CEO of TechCorp</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The marketing team delivered exceptional results beyond our expectations. Will work with them again."</p>
+                    <div class="author">- Sarah M., Marketing Director</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Professional, reliable, and truly understands business needs. A trusted partner for growth."</p>
+                    <div class="author">- David T., Small Business Owner</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest news and offers</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61575252350623&mibextid=rS40aB7S9Ucbxw6v" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/sema.thebohlo?igsh=OGp6a28ya3VpMm53" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="footerbuttons">
+            <p>Copyright &copy; 2025 designed by <span class="designer">Teezy</span></p>
+        </div>
+    </footer>
+    
+    <button onclick="switchcolor()" id="colorbutton" aria-label="Toggle color theme">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Service Details</h2>
+            <div id="modalContent">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+   
+</body>
+</html>

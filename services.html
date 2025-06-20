@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MOSEMATHEBOHLO Services - Professional transport, decoration, cleaning, and catering services">
+    <title>MOSEMATHEBOHLO Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="mosemathebohlo.css">
+    <script src="mosemathebohlo.js"></script> 
+</head>
+<body>
+    <nav class="nav">
+     <nav class="nav">
+        <div class="bouncing-text">mosemathebohlo</div>
+        <ul class="navibar">
+             <li><a href="MOSEMATHEBOHLO.HTML" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="enqure.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="aboutus.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="services.html" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a></li> 
+            <button onclick="switchcolor()" id="colorbutton" aria-label="Toggle color theme">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+        </ul>
+    </nav>
+
+    <main>
+        <h3 class="heading">MOSEMATHEBOHLO SERVICES</h3>
+        <p class="index">We are a service providing company that offers a variety of premium services to meet all your needs. Our professional team is dedicated to delivering exceptional quality and customer satisfaction.</p>
+        
+        <div class="services-list">
+            <div class="service-category">
+                <i class="fas fa-truck"></i>
+                <h4>Transport Services</h4>
+                <p>Reliable and efficient transportation solutions for all your needs</p>
+            </div>
+            <div class="service-category">
+                <i class="fas fa-paint-brush"></i>
+                <h4>Decoration</h4>
+                <p>Stunning decor for all occasions and venues</p>
+            </div>
+            <div class="service-category">
+                <i class="fas fa-broom"></i>
+                <h4>Cleaning</h4>
+                <p>Professional cleaning services for homes and businesses</p>
+            </div>
+            <div class="service-category">
+                <i class="fas fa-utensils"></i>
+                <h4>Catering</h4>
+                <p>Delicious catering for events of all sizes</p>
+            </div>
+        </div>
+
+        <div class="decor-section">
+            <h3 class="decor-heading">Our Decoration Services</h3>
+            <p class="index">Welcome to MOSEMATHEBOHLO's decor section where we transform spaces into memorable experiences</p>
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img class="deco" src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Adult parties decoration">
+                    <div class="gallery-caption">Elegant Adult Parties</div>
+                </div>
+                <div class="gallery-item">
+                    <img class="deco" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Wedding decoration">
+                    <div class="gallery-caption">Dream Weddings</div>
+                </div>
+                <div class="gallery-item">
+                    <img class="deco" src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kids parties decoration">
+                    <div class="gallery-caption">Fun Kids Parties</div>
+                </div>
+                <div class="gallery-item">
+                    <img class="deco" src="https://images.unsplash.com/photo-1544033679-5dc62d483713?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Funeral decoration">
+                    <div class="gallery-caption">Dignified Funerals</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wallpaper">
+            <div>
+                <h2>Ready to Transform Your Event?</h2>
+                <p>Contact us today to discuss how we can make your next occasion truly special with our professional services.</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="footerbuttons">
+            <p>Copyright &copy; 2025 designed by <span class="designer">Teezy</span></p>
+        </div>
+    </footer>
+
+    
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Service Details</h2>
+            <div id="modalContent">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
